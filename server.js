@@ -5,6 +5,9 @@ const Database = require("better-sqlite3");
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+const cors = require("cors");
+app.use(cors());
+
 const SUBJECTS = [
   "English",
   "Science",
