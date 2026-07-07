@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ClassBond — Find Online & Home Tutors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-inner">
+        <a href="#" class="logo">
+          <img
+            src="images/cb-icon.svg"
+            alt="ClassBond icon"
+            class="logo-mark logo-image"
+          />
+          <span>ClassBond</span>
+        </a>
+        <button
+          class="menu-toggle"
+          id="menu-toggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="nav" id="nav">
+          <a href="#students">Students</a>
+          <a href="#subjects">Subjects</a>
+          <a href="#inquiry" class="nav-cta">Get Started</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="hero-bg">
+        <div class="banner-slider">
+          <div
+            class="banner active"
+            style="background-image: url(&quot;images/hero-1.jpg&quot;)"
+          ></div>
+          <div
+            class="banner"
+            style="background-image: url(&quot;images/hero-2.jpg&quot;)"
+          ></div>
+          <div
+            class="banner"
+            style="background-image: url(&quot;images/hero-3.jpg&quot;)"
+          ></div>
+        </div>
+        <div class="hero-overlay"></div>
+      </div>
+
+      <div class="container hero-content">
+        <div class="hero-text">
+          <span class="hero-badge">Offline + online home tutors</span>
+          <h1>Find the right home tutor for every subject</h1>
+          <p>
+            English, Maths, Physics, Bengali &amp; more — connect with expert
+            home tutors for online or in-person lessons.
+          </p>
+          <a href="#inquiry" class="btn-primary">Request a Tutor</a>
+          <div class="hero-stats">
+            <div><strong>500+</strong><span>Happy students</span></div>
+            <div><strong>12+</strong><span>Subjects</span></div>
+            <div><strong>24h</strong><span>Quick callback</span></div>
+          </div>
+        </div>
+
+        <div class="hero-students">
+          <div class="student-stack">
+            <img
+              src="images/student-1.jpg"
+              alt="Student learning online"
+              class="student-photo main"
+              loading="eager"
+            />
+            <img
+              src="images/student-2.jpg"
+              alt="Student with laptop"
+              class="student-photo side top"
+              loading="lazy"
+            />
+            <img
+              src="images/student-3.jpg"
+              alt="Student studying"
+              class="student-photo side bottom"
+              loading="lazy"
+            />
+          </div>
+          <div class="student-chip">
+            <div class="chip-avatars">
+              <img src="images/student-1.jpg" alt="" />
+              <img src="images/student-2.jpg" alt="" />
+              <img src="images/student-3.jpg" alt="" />
+              <img src="images/student-4.jpg" alt="" />
+            </div>
+            <p><strong>120+ students</strong> joined this month</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="banner-dots">
+        <button class="dot active" aria-label="Slide 1"></button>
+        <button class="dot" aria-label="Slide 2"></button>
+        <button class="dot" aria-label="Slide 3"></button>
+      </div>
+    </section>
+
+    <section id="inquiry" class="inquiry inquiry-hero">
+      <div class="container">
+        <div class="inquiry-wrapper">
+          <div class="inquiry-text">
+            <span class="section-label">Get connected</span>
+            <h2 class="section-title left">Ready to Start?</h2>
+            <p>
+              Tell us your class, subject, and phone number. We’ll reach out and
+              connect you with an online or home tutor that matches your needs.
+            </p>
+            <ul class="inquiry-benefits">
+              <li>Free consultation</li>
+              <li>Quick callback within 24 hours</li>
+              <li>No commitment required</li>
+            </ul>
+            <div class="inquiry-mini-students">
+              <img src="images/student-1.jpg" alt="" />
+              <img src="images/student-4.jpg" alt="" />
+              <span>Join students already learning with us</span>
+            </div>
+          </div>
+          <form id="inquiry-form" class="inquiry-form">
+            <h3>Request a Tutor</h3>
+            <p class="form-desc">
+              Fill in your details — we'll call you back soon.
+            </p>
+            <div class="form-group">
+              <label for="class_name">Your Class</label>
+              <select id="class_name" name="class_name" required>
+                <option value="">Select your class...</option>
+                <option value="Class 1">Class 1</option>
+                <option value="Class 2">Class 2</option>
+                <option value="Class 3">Class 3</option>
+                <option value="Class 4">Class 4</option>
+                <option value="Class 5">Class 5</option>
+                <option value="Class 6">Class 6</option>
+                <option value="Class 7">Class 7</option>
+                <option value="Class 8">Class 8</option>
+                <option value="Class 9">Class 9</option>
+                <option value="Class 10">Class 10</option>
+                <option value="Class 11">Class 11</option>
+                <option value="Class 12">Class 12</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <div class="search-wrap">
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="Type to search — e.g. Physics, Bengali..."
+                  autocomplete="off"
+                  required
+                />
+                <ul id="subject-suggestions" class="suggestions" hidden></ul>
+              </div>
+              <span class="form-hint"
+                >Search from our list or type any subject you need</span
+              >
+            </div>
+            <div class="form-group">
+              <label for="city">City</label>
+              <input
+                type="text"
+                id="city"
+                name="city"
+                placeholder="e.g. Kolkata"
+                required
+                maxlength="50"
+              />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="e.g. 9876543210"
+                required
+                maxlength="15"
+              />
+            </div>
+            <button type="submit" class="btn-submit">
+              Connect Me with a Tutor
+            </button>
+            <p id="form-message" class="form-message" hidden></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="mode-section" aria-labelledby="tutor-mode-title">
+      <div class="container">
+        <div class="mode-shell">
+          <div class="section-heading compact">
+            <span class="section-label">Tutor formats</span>
+            <h2 id="tutor-mode-title" class="section-title">
+              Choose what fits your child best
+            </h2>
+          </div>
+          <div class="mode-tabs" role="tablist" aria-label="Tutor formats">
+            <button
+              class="mode-tab active"
+              id="tab-online"
+              role="tab"
+              aria-selected="true"
+              aria-controls="panel-online"
+              data-target="online"
+            >
+              Online Tutoring
+            </button>
+            <button
+              class="mode-tab"
+              id="tab-home"
+              role="tab"
+              aria-selected="false"
+              aria-controls="panel-home"
+              data-target="home"
+            >
+              Home Tutoring
+            </button>
+          </div>
+          <div class="mode-panels">
+            <article
+              class="mode-panel active"
+              id="panel-online"
+              role="tabpanel"
+              aria-labelledby="tab-online"
+            >
+              <h3>Online learning from home</h3>
+              <p>
+                Live sessions, recorded notes, and flexible scheduling for
+                students who prefer learning from a laptop or phone.
+              </p>
+              <ul>
+                <li>Weekly classes with progress tracking</li>
+                <li>Easy access from any location</li>
+                <li>Best for revision and exam prep</li>
+              </ul>
+            </article>
+            <article
+              class="mode-panel"
+              id="panel-home"
+              role="tabpanel"
+              aria-labelledby="tab-home"
+              hidden
+            >
+              <h3>In-person home tutoring</h3>
+              <p>
+                Experienced tutors visit your home for focused, one-on-one
+                support in a comfortable learning environment.
+              </p>
+              <ul>
+                <li>Personal attention and routine support</li>
+                <li>Ideal for homework and concept building</li>
+                <li>Available for nearby local areas</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="container">
+        <div class="feature-grid">
+          <div class="feature-card">
+            <div class="feature-icon">🎯</div>
+            <h3>Focused Learning</h3>
+            <p>Tailored sessions for your subject and pace</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">👨‍🏫</div>
+            <h3>Expert Tutors</h3>
+            <p>Experienced teachers for every grade level</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">💻</div>
+            <h3>Online &amp; Flexible</h3>
+            <p>Learn from anywhere at times that suit you</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="students" class="students-section">
+      <div class="container">
+        <div class="students-header">
+          <div>
+            <span class="section-label">Our learners</span>
+            <h2 class="section-title">Students who trust us</h2>
+            <p class="section-subtitle left">
+              Real students, real progress — join hundreds learning with
+              ClassBond every day.
+            </p>
+          </div>
+        </div>
+        <div class="students-grid">
+          <article class="student-card">
+            <img
+              src="images/student-1.jpg"
+              alt="Arjun, Class 10 student"
+              loading="lazy"
+            />
+            <div class="student-card-body">
+              <h3>Arjun</h3>
+              <span class="student-grade">Class 10 · Maths</span>
+              <p>"My grades improved in just 2 months!"</p>
+            </div>
+          </article>
+          <article class="student-card">
+            <img
+              src="images/student-2.jpg"
+              alt="Priya, Class 9 student"
+              loading="lazy"
+            />
+            <div class="student-card-body">
+              <h3>Priya</h3>
+              <span class="student-grade">Class 9 · English</span>
+              <p>"The tutor explained everything so clearly."</p>
+            </div>
+          </article>
+          <article class="student-card">
+            <img
+              src="images/student-3.jpg"
+              alt="Sneha, Class 8 student"
+              loading="lazy"
+            />
+            <div class="student-card-body">
+              <h3>Sneha</h3>
+              <span class="student-grade">Class 8 · Science</span>
+              <p>"Science finally makes sense to me now."</p>
+            </div>
+          </article>
+          <article class="student-card">
+            <img
+              src="images/student-4.jpg"
+              alt="Riya, Class 7 student"
+              loading="lazy"
+            />
+            <div class="student-card-body">
+              <h3>Riya</h3>
+              <span class="student-grade">Class 7 · SST</span>
+              <p>"History and geography became my favourites."</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="subjects" class="subjects">
+      <div class="container">
+        <span class="section-label center">What we teach</span>
+        <h2 class="section-title">Subjects We Cover</h2>
+        <p class="section-subtitle">
+          Choose your subject and we'll match you with the right tutor
+        </p>
+        <div class="subject-tags" aria-label="All available subjects">
+          <span class="subject-pill">English</span>
+          <span class="subject-pill">Maths</span>
+          <span class="subject-pill">Science</span>
+          <span class="subject-pill">SST</span>
+          <span class="subject-pill">History</span>
+          <span class="subject-pill">Geography</span>
+          <span class="subject-pill">Physics</span>
+          <span class="subject-pill">Chemistry</span>
+          <span class="subject-pill">Computer Science</span>
+          <span class="subject-pill">Bengali</span>
+        </div>
+        <div class="subject-grid">
+          <article class="subject-card">
+            <div class="subject-img-wrap">
+              <img
+                src="images/english.jpg"
+                alt="English tutoring"
+                loading="lazy"
+                width="600"
+                height="400"
+              />
+              <span class="subject-tag">English</span>
+            </div>
+            <div class="subject-info">
+              <h3>English</h3>
+              <p>Grammar, literature, writing &amp; communication</p>
+            </div>
+          </article>
+          <article class="subject-card">
+            <div class="subject-img-wrap">
+              <img
+                src="images/science.jpg"
+                alt="Science tutoring"
+                loading="lazy"
+                width="600"
+                height="400"
+              />
+              <span class="subject-tag">Science</span>
+            </div>
+            <div class="subject-info">
+              <h3>Science</h3>
+              <p>Physics, chemistry, biology &amp; experiments</p>
+            </div>
+          </article>
+          <article class="subject-card">
+            <div class="subject-img-wrap">
+              <img
+                src="images/maths.jpg"
+                alt="Maths tutoring"
+                loading="lazy"
+                width="600"
+                height="400"
+              />
+              <span class="subject-tag">Maths</span>
+            </div>
+            <div class="subject-info">
+              <h3>Maths</h3>
+              <p>Algebra, geometry, calculus &amp; problem solving</p>
+            </div>
+          </article>
+          <article class="subject-card">
+            <div class="subject-img-wrap">
+              <img
+                src="images/sst.jpg"
+                alt="SST tutoring"
+                loading="lazy"
+                width="600"
+                height="400"
+              />
+              <span class="subject-tag">SST</span>
+            </div>
+            <div class="subject-info">
+              <h3>SST</h3>
+              <p>History, geography, civics &amp; social studies</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <img
+            src="images/classbond-icon.svg"
+            alt="ClassBond icon"
+            class="logo-mark logo-image"
+          />
+          <span>ClassBond</span>
+        </div>
+        <p>&copy; 2026 ClassBond. Connecting students with great tutors.</p>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+node_modules/
+tutoring.db
+*.db
+=======
+node_modules/
+tutoring.db
+*.db
+>>>>>>> ffa5c125715988d6f2428d097a63cf9f27e364d1
+=======
+node_modules/
+tutoring.db
+*.db
+>>>>>>> ffa5c125715988d6f2428d097a63cf9f27e364d1
